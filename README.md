@@ -8,7 +8,7 @@ Express note taker is a node.js note taking application that allows notes to be 
 
 ## Installation
 
-* Navigate to https://github.com/mpkahn/notetaker and clone repository to access app.js file located in Develop folder.
+* Navigate to https://github.com/mpkahn/notetaker and clone repository to access server.js file located in root folder.
 * Once on local machine:
 * Install npm (npm i) and (if needed) npm install express.
 * In gitbash, run node server.js, and once you see local host is running, visit in your browser: http://localhost:3001/
