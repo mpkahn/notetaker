@@ -46,18 +46,18 @@ app.post("/api/notes", function(req, res) {
   let noteCreate = req.body;
   note.push(noteCreate);
   updateNotes();
-  return console.log("New note added: "+noteCreate.title);
+  return console.log("New note added: "+ noteCreate.title);
 });
 
 app.delete("/api/notes/:id", function(req, res) {
   note.splice(req.params.id, 1);
   updateNotes();
-  console.log("Deleted note: "+req.params.id);
+  console.log("Deleted note: "+ req.params.id);
 });
 
-app.get("/api/notes/:id", function(req,res) {
   // display json notes by id
-  res.json(notes[req.params.id]);
+app.get("/api/notes/:id", function(req,res) {
+  res.json(note[req.params.id]);
 });
 
 function updateNotes() {
